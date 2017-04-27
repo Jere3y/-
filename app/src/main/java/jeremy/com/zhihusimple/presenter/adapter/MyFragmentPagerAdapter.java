@@ -12,15 +12,15 @@ import jeremy.com.zhihusimple.view.BaseFragment;
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String tag;
 
     private List<BaseFragment> fragmentList;
 
+    private final String[] titles = {"干货集中","知乎日报","好奇日报"};
 
-    public MyFragmentPagerAdapter(FragmentManager supportFragmentManager, List<BaseFragment> fragmentList, String tag) {
+    public MyFragmentPagerAdapter(FragmentManager supportFragmentManager, List<BaseFragment> fragmentList) {
         super(supportFragmentManager);
         this.fragmentList = fragmentList;
-        this.tag = tag;
+
     }
 
     @Override
@@ -45,16 +45,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        if (tag.equals("main_view_pager")) {
-            switch (position) {
-                case 0:
-                    return "知乎";
-                case 1:
-                    return "干货";
-                case 2:
-                    return "满足你的好奇心";
-            }
-        }
-        return null;
+
+        return titles[position];
     }
 }
