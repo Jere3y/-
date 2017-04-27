@@ -10,6 +10,7 @@
 - ButterKnife 减少胶水代码 findViewById(id) 之类的使用，使代码结构异常清晰、可读性大大增加。
    
 #### 2. 项目结构异常清晰：
+![项目结构](https://github.com/Jere3y/curiosity/tree/master/des/项目结构.JPG)
 
 - 提供3个基类`(BaseActivity.java, BaseFragment.java, BasePresenter.java)`来实现MVP设计。   
     
