@@ -10,7 +10,9 @@
 - ButterKnife 减少胶水代码 findViewById(id) 之类的使用，使代码结构异常清晰、可读性大大增加。
    
 #### 2. 项目结构异常清晰：
-![项目结构](https://github.com/Jere3y/curiosity/tree/master/des/项目结构.JPG)
+![项目结构](https://raw.github.com/Jere3y/curiosity/master/des/project_tree.JPG)
+
+- 提供4个包，各司其职，高度解耦，model包括项目所需的数据，view负责显示，Presenter负责数据的处理和控制显示。
 
 - 提供3个基类`(BaseActivity.java, BaseFragment.java, BasePresenter.java)`来实现MVP设计。   
     
@@ -20,4 +22,4 @@
 
 - BasePresenter 通过接口获得 Activity 或者 Fragment 的界面组件，控制数据的显示与更新。
        
-#### 3. 命名合理，做到见名知意：
+#### 3. 命名合理，做到见名知用：
