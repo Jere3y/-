@@ -1,23 +1,17 @@
-package jeremy.com.view.activity;
+package jeremy.com.zhihusimple.view.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.view.View;
-import android.widget.TextView;
 
-import butterknife.BindView;
-import jeremy.com.R;
-import jeremy.com.presenter.BasePresenter;
-import jeremy.com.view.BaseActivity;
+import jeremy.com.zhihusimple.R;
+import jeremy.com.zhihusimple.presenter.BasePresenter;
+import jeremy.com.zhihusimple.view.BaseActivity;
 
 
-public class AboutMeActivity extends BaseActivity implements View.OnClickListener {
+public class AboutMeActivity extends BaseActivity {
 
-    @BindView(R.id.tv_github)
-    TextView tv_github;
 
     public CollapsingToolbarLayout collapsingToolbarLayout;
 
@@ -29,8 +23,6 @@ public class AboutMeActivity extends BaseActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initToolbar();
-
-        tv_github.setOnClickListener(this);
 
     }
 
@@ -52,14 +44,4 @@ public class AboutMeActivity extends BaseActivity implements View.OnClickListene
         collapsingToolbarLayout.setTitle("很高兴你能看到这里");
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.tv_github:
-                Intent it1 = new Intent(Intent.ACTION_VIEW, Uri.parse(tv_github.getText().toString()));
-                it1.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
-                startActivity(it1);
-                break;
-        }
-    }
 }

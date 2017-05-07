@@ -33,6 +33,7 @@
         <activity android:name=".view.activity.DailyFeedActivity"/>
         <activity android:name=".view.activity.PictureActivity"/>
         <activity android:name=".view.activity.ZhihuWebActivity"/>
+        <activity android:name=".view.activity.AboutMeActivity"/>
     </application>
 
 </manifest>

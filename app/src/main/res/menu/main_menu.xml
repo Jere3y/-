@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="功能">
+        <menu>
+            <item
+                android:id="@+id/zhihu"
+                android:title="知乎日报"/>
+            <item
+                android:id="@+id/gank"
+                android:title="干货集中营"/>
+            <item
+                android:id="@+id/haoqixin"
+                android:title="好奇心日报"/>
+            <item
+                android:id="@+id/today_github"
+                android:title="@string/github"/>
+        </menu>
+    </item>
 
-    <item android:id="@+id/today_github"
-        android:title="@string/github"
-        />
-
-
+    <item android:title="关于软件">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:title="关于"/>
+            <item
+                android:id="@+id/exit"
+                android:title="退出"/>
+        </menu>
+    </item>
 </menu>

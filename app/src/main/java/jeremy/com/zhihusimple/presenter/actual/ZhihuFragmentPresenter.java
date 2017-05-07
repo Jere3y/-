@@ -104,9 +104,6 @@ public class ZhihuFragmentPresenter extends BasePresenter<IZhihuFragmentView> {
         time = newsTimeLine.getDate();
     }
 
-    /**
-     * recyclerView Scroll listener , maybe in here is wrong ?
-     */
     public void scrollRecycleView() {
         mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override

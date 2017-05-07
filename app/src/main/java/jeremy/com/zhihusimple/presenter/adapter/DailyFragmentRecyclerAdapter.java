@@ -222,13 +222,10 @@ public class DailyFragmentRecyclerAdapter extends RecyclerView.Adapter<RecyclerV
         TopStoriesViewPager vp_top_stories;
         @BindView(R.id.tv_top_title)
         TextView tv_top_title;
-        @BindView(R.id.tv_tag)
-        TextView tv_tag;
 
         public TopStoriesViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
-            tv_tag.setVisibility(View.GONE);
         }
 
         public void bindItem(List<Daily> banners) {
