@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">求职</string>
+    <string name="app_name">求知</string>
     <string name="slogan">Zhihu And Gank.io</string>
     <string name="load_error">网络不见了~</string>
     <string name="save">保存当前图片吗？</string>
